@@ -1,6 +1,5 @@
 RegisterServerEvent("p1_policeapplication:ReceivedApplication")
 AddEventHandler("p1_policeapplication:ReceivedApplication", function(data)
-    print(data.name)
     SendDiscordMessage(
         "***--- [Personuppgifter] ---***\n" ..
         "**Namn:** " .. data.name .. "\n" ..
