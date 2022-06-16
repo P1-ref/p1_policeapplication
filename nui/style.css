@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+:root {
+    --background: #1f2029;
+    --primary: #121318;
+    --text-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 95vw;
+    height: 95vh;
+    margin-top: -47.5vh;
+    margin-left: -47.5vw;
+    background: var(--background);
+    color: var(--text-color);
+    border: 3px solid var(--primary);
+    border-radius: .5em;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5em;
+    margin-top: .5em;
+    height: 5vh;
+}
+
+.header span {
+    position: absolute;
+    right: .5em;
+    top: .25em;
+    transition: .4s;
+    font-size: 2em;
+}
+
+.header span:hover {
+    cursor: pointer;
+    transform: scale(125%);
+}
+
+.form-box {
+    width: 100%;
+    height: 93%;
+    background-color: var(--background);
+    font-size: 1em;
+    padding: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin: .75em;
+}
+
+.form-box input {
+    display: flex;
+    flex-direction: column;
+    width: 12.5vw;
+    padding: .75em .5em;
+    box-sizing: border-box;
+    background-color: var(--background);
+    border: 3px solid var(--primary);
+    color: var(--text-color);
+    border-radius: 1em;
+    outline: none;
+    font-size: 1em;
+    transition: 0.4s;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.left-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 1.5em;
+    background-color: var(--background);
+    border: 3px solid var(--primary);
+    color: var(--text-color);
+    border-radius: 1em;
+    font-size: 1em;
+    transition: 0.4s;
+    margin-bottom: 1em;
+    margin-left: -1em;
+}
+
+.middle-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 1.5em;
+    background-color: var(--background);
+    border: 3px solid var(--primary);
+    color: var(--text-color);
+    border-radius: 1em;
+    font-size: 1em;
+    transition: 0.4s;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.right-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 1.5em;
+    background-color: var(--background);
+    border: 3px solid var(--primary);
+    color: var(--text-color);
+    border-radius: 1em;
+    font-size: 1em;
+    transition: 0.4s;
+    margin-bottom: 1em;
+}
+
+.person-info, .general-info {
+    padding: 1.5em;
+    background-color: var(--background);
+    color: var(--text-color);
+    border-radius: 1em;
+    font-size: 1em;
+    transition: 0.4s;
+}
+
+.person-info:hover, .general-info:hover, .elaborated-info:hover {
+    transform: scale(103%);
+    box-shadow: 1em 1.25em .25em black;
+}
+
+.general-info {
+    margin-top: 2.05em;
+}
+
+.elaborated-info {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 1.5em;
+    background-color: var(--background);
+    color: var(--text-color);
+    border-radius: 1em;
+    font-size: 1em;
+    transition: 0.4s;
+    margin-bottom: 1em;
+}
+
+.elaborated-info textarea {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    padding: .5em;
+    background-color: var(--background);
+    border: 3px solid var(--primary);
+    color: var(--text-color);
+    border-radius: 1em;
+    font-size: 1em;
+    outline: none;
+    resize: none;
+}
+
+.elaborated-info input[type=submit] {
+    align-items: center;
+}
+
+.elaborated-info input[type=submit]:hover {
+    background-color: var(--primary);
+    transform: scale(1.05);
+    cursor: pointer;
+}

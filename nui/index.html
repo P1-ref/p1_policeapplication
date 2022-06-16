@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>p1_policeapplication</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Polisansökan</h1>
+            <p id="close"><span class="material-symbols-outlined">close</span></p>
+        </div>
+        <div class="form-box">
+            <form id="form">
+                <div class="left-wrapper">
+                    <div class="person-info">
+                        <h2>Personuppgifter</h2><br>
+                        <label for="name">För- & efternamn:</label>
+                        <input type="text" id="name" required placeholder="För- & efternamn...">
+
+                        <label for="birthdate">Födelsedatum (2000-01-01):</label>
+                        <input type="text" id="birthdate" required placeholder="Födelsedatum...">
+
+                        <label for="discord-name">Discord-namn (inkl. ####) (OOC):</label>
+                        <input type="text" id="discord-name" required placeholder="exempel#0001...">
+                    </div>
+
+                    <div class="general-info">
+                        <h2>Allmänt</h2><br>
+                        <label for="lived-here">Hur länge har du bott här?</label>
+                        <input type="text" id="lived-here" required placeholder="Jag har bott här i...">
+
+                        <label for="xp-police">Har du tidigare erfarenhet från polisen?</label>
+                        <input type="text" id="xp-police" required placeholder="Jag har arbetat...">
+
+                        <label for="veh-license">Ange dina fordonsbehörigheter:</label>
+                        <input type="text" id="veh-license" required placeholder="AM, A1, B...">
+                    </div>
+                </div>
+
+                <div class="middle-wrapper">
+                    <div class="elaborated-info">
+                        <h2>Resonering</h2><br>
+                        <label for="info-you">Berätta om dig själv:</label>
+                        <textarea type="text" id="info-you" rows="4" cols="50" required placeholder="Jag är en trevlig..."></textarea>
+
+                        <label for="logic-thinking">Vad innebär ett sunt förnuft?</label>
+                        <textarea type="text" id="logic-thinking" rows="4" cols="50" required placeholder="Det innebär att..."></textarea>
+
+                        <label for="good-cop">Vad definierar en bra polis enligt dig?</label>
+                        <textarea type="text" id="good-cop" rows="4" cols="50" required placeholder="En bra polis är..."></textarea>
+
+                        <label for="police-tasks">Resonera kring polisens uppgifter:</label>
+                        <textarea type="text" id="police-tasks" rows="7" cols="50" required placeholder="Brottsförebyggande är viktigt eftersom..."></textarea>
+                    </div>
+                </div>
+
+                <div class="right-wrapper">
+                    <div class="elaborated-info">
+                        <h2>Vår poliskår</h2><br>
+                        <label for="accept-you">Varför tycker du att vi ska acceptera just dig?</label>
+                        <textarea type="text" id="accept-you" rows="4" cols="50" required placeholder="Eftersom att jag..."></textarea>
+
+                        <label for="plans">Berätta om dina planer inom polisen:</label>
+                        <textarea type="text" id="plans" rows="4" cols="50" required placeholder="Jag vill..."></textarea>
+
+                        <label for="in-duty">Hur ofta kommer du att vara i tjänst?</label>
+                        <textarea type="text" id="in-duty" rows="4" cols="50" required placeholder="Jag kommer att arbeta..."></textarea>
+                    
+                        <label for="additions">Tillägg:</label>
+                        <input type="text" id="additions" placeholder="Jag ser fram emot..."><br><br>
+                        <input type="submit" value="Skicka in">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="nui://game/ui/jquery.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
